@@ -1,4 +1,9 @@
-;;;Exercise 1.8
+#lang racket/base
+
+(require rackunit)
+
+(define (square x)
+    (* x x))
 
 (define (cube x)
     (* x x x))

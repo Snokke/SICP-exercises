@@ -1,5 +1,9 @@
-;;;Exercise 1.6
-;Result: sqrt-new-if doesn't work: "Aborting!: maximum recursion depth exceeded"
+#lang racket/base
+
+(require rackunit)
+
+(define (square x)
+    (* x x))
 
 (define (improve guess x)
     (average guess (/ x guess)))
@@ -36,4 +40,7 @@
 (define (sqrt-new-if x)
     (sqrt-iter-new-if 1.0 x))
 
-(sqrt-new-if 25)
+;Result: sqrt-new-if doesn't work: "Aborting!: maximum recursion depth exceeded"
+;(sqrt-new-if 25)
+
+(check-equal? (sqrt 25) 5.000023178253949)

@@ -1,4 +1,6 @@
-;;;Exercise 1.1
+#lang racket/base
+
+(require rackunit)
 
 10
 
