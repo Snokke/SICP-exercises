@@ -1,5 +1,3 @@
-;;;Exercise 1.2
-;;;result: -37/150
 #lang racket/base
 
 (require rackunit)
